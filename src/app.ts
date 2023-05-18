@@ -1,4 +1,3 @@
-import bodyParser from 'body-parser';
 import { Book } from "./models/Book"
 import { Service } from "./models/services"
 import { Subject } from "./models/Subject"
@@ -10,7 +9,6 @@ const port = 5004;
 
 app.use(express.json());
 
-// app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors({
     oringin: '*',
     credentials: true

@@ -1,14 +1,14 @@
 FROM node
 
-WORKDIR /app
+RUN npm install -g npm@9.6.6
+
+WORKDIR /src
 
 COPY package*.json ./
 
 RUN npm install
 
 COPY . .
-
-WORKDIR /app/src
 
 EXPOSE 5004
 
